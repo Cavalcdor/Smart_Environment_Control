@@ -67,7 +67,7 @@ Smart_Environment_Control/
 1. **模块化分离**：硬件、软件、文档独立管理，便于分工协作  
 2. **关注点分离**：电脑端负责AI处理，Arduino端负责实时控制  
 3. **配置中心化**：关键参数集中在`Config/`目录，便于统一管理  
-4. **可扩展性**：预留接口支持新传感器（如空气质量）或执行器（如窗帘控制）  
+4. **可扩展性**：预留接口支持新传感器或执行器
 
 
 ## **系统架构**  
@@ -94,17 +94,17 @@ Smart_Environment_Control/
 
 ## **功能特性**  
 1. **多模态感知**：  
-   - 实时面部表情识别（微笑/中性/皱眉）  
+   - 实时面部表情识别
    - 心率监测与异常检测  
    - 环境温湿度及光照强度采集  
 
 2. **智能决策**：  
    - 基于模糊控制理论的环境调节策略  
-   - 多参数融合决策（情绪+生理+环境）  
+   - 多参数融合决策
 
 3. **自适应调节**：  
    - 灯光色温与亮度智能调节  
-   - 模拟电器（空调/风扇/照明）自动控制  
+   - 模拟电器自动控制  
 
 
 ## **技术栈**  
@@ -118,8 +118,8 @@ Smart_Environment_Control/
 
 ### 软件  
 - Python 3.8+  
-- MediaPipe（表情识别）  
-- OpenCV（图像处理）  
+- MediaPipe
+- OpenCV
 - Arduino IDE/PlatformIO  
 - FastLED库、DHT库、MAX30105库  
 
@@ -128,7 +128,7 @@ Smart_Environment_Control/
 ### 硬件连接  
 1. **MAX30100传感器**：  
    ```  
-   VCC → Arduino 5V（串联1kΩ分压电阻）  
+   VCC → Arduino 5V
    GND → Arduino GND  
    SDA → Arduino A4  
    SCL → Arduino A5  
@@ -138,7 +138,7 @@ Smart_Environment_Control/
    ```  
    VCC → Arduino 5V  
    GND → Arduino GND  
-   DATA → Arduino D6（串联220Ω限流电阻）  
+   DATA → Arduino D6
    ```  
 
 3. **继电器模块**：  
